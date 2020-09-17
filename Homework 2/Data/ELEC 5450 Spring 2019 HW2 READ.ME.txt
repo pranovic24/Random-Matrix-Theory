@@ -1,0 +1,14 @@
+EELEC 5450 Spring 2019 HW2 Assignment
+
+READ.ME file
+
+
+- The data SP100_2011_2013.mat is a m x n matrix, where m = 98 is the number of stocks, 
+and n = 753 the number of samples (log-returns at successive times).
+
+The underlying name of these data is Y.
+
+You can use the function 'load' to load the data onto MATLAB.
+
+
+- To plot histograms, you may refer to the function histn used in the first homework assignment.

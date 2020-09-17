@@ -1,0 +1,15 @@
+ELEC 5450 HW1 Assignment
+
+READ.ME file for MATLAB samples codes.
+
+- histn.m allows you to plot normalized histograms of a vector of values. You can refer to the comments in the code for details.
+
+- compute_jacobi.m % The function compute_jacobi(n,a,b,x) computes all the Jacobi polynomials
+  of order 0, 1, 2, ..., n evaluated at x. It returns a matrix phi of size (N+1, length(x)) 
+  where phi(i,j) stores the value of the i-th Jacobi polynomial evaluated in x(j) 
+  These Jacobi polynomials are orthogonal with respect to J_w^{(alpha,beta)}, and they are already normalized.
+  This function calls the function orthopoly_evaluate.m which evaluates the Jacobi polynomials in x
+
+- orthopoly_evaluate.m is used by the function compute_jacobi.m to compute the polynomials (you don't need to use this function, it is already used in compute_jacobi.m)
+
+hint: When computing the integral in MATLAB, if you encounter numerical instability for computing Jacobian polynomials with the steps you defined, you may add a very small random number to the steps. For example, you can set x = (0:step:1) + rand*1e-5 to avoid possible numerical instability.
